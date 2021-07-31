@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Search_Map"
+    tools:context=".Search_map">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/start_edit"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:ems="16"
+                android:hint="출발지를 입력하세요"
+                android:imeOptions="actionSearch"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/end_edit"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:ems="16"
+                android:hint="도착지를 입력하세요"
+                android:imeOptions="actionSearch"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:text="길찾기" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rl_listview1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:background="#ffdddddd"
+        tools:listitem="@layout/list_item" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rl_listview2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:background="#ffdddddd"
+        tools:listitem="@layout/list_item" />
+
+
+</FrameLayout>

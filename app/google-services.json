@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "769892876488",
+    "firebase_url": "https://cctvmap-cecea.firebaseio.com",
+    "project_id": "cctvmap-cecea",
+    "storage_bucket": "cctvmap-cecea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769892876488:android:dc0063c58bf8a99230e5fd",
+        "android_client_info": {
+          "package_name": "kr.ac.kumoh.s20140716.cctvmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769892876488-5omtefc02bcu7glnca8lnhsdusrr7cv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGDVVpmIQjZrDlgD57WkTEnUFJrwQFLPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769892876488-5omtefc02bcu7glnca8lnhsdusrr7cv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

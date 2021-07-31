@@ -1,0 +1,82 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "851a4dd9fae7d1604410adf4c85eb546",
+    "entities": [
+      {
+        "tableName": "CCTV_info",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`key` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `Control_name` TEXT NOT NULL, `Control_number` TEXT NOT NULL, `save` TEXT NOT NULL, `address_road` TEXT NOT NULL, `address_bunji` TEXT NOT NULL, `camera` TEXT NOT NULL, `Latitude` REAL NOT NULL, `Longitude` REAL NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "key",
+            "columnName": "key",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Control_name",
+            "columnName": "Control_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Control_number",
+            "columnName": "Control_number",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "save",
+            "columnName": "save",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "address_road",
+            "columnName": "address_road",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "address_bunji",
+            "columnName": "address_bunji",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "camera",
+            "columnName": "camera",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Latitude",
+            "columnName": "Latitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Longitude",
+            "columnName": "Longitude",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "key"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '851a4dd9fae7d1604410adf4c85eb546')"
+    ]
+  }
+}

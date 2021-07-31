@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/drawble">
+
+    <FrameLayout
+        android:orientation = "vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/Tmap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_button"
+                android:textSize="10sp"
+                android:text="경로 검색"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="50dp"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffdddddd"/>
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="50dp"
+            android:background="#ffdddddd"
+            android:hint="검색할 장소를 입력하세요"
+            android:inputType="text" />
+
+        <Switch
+            android:id="@+id/GPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="292dp"
+            android:layout_marginTop="60dp"
+            android:checked="true"
+            android:text="GPS"
+            android:textOff="GPS Off"
+            android:textOn="GPS On" />
+
+        <ToggleButton
+            android:id="@+id/cctv_button"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="50dp"
+            android:textOff="CCTV"
+            android:textOn="CCTV"
+            android:textSize="7sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookmark_button"
+            android:text="Bookmark"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="320dp"
+            android:textSize="9dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rl_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="48dp"
+            android:background="#ffdddddd"
+            tools:listitem="@layout/list_item" />
+
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navi_header"
+        app:menu="@menu/navi_menu"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
